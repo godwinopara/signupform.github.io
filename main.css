@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("/images/bg-intro-mobile.png");
+  color: white;
+  line-height: 1.5;
+  height: 100vh;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+.signup-details {
+  text-align: center;
+  /* margin: 4rem auto; */
+}
+
+.signup-details h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 5rem auto 1rem;
+}
+
+.signup-details p {
+  opacity: 0.9;
+}
+
+.form-wrapper {
+  padding: 2rem;
+  max-width: 1000px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  place-items: center;
+  column-gap: 2rem;
+}
+
+form {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+}
+
+form button {
+  text-transform: uppercase;
+  width: 100%;
+  background: hsl(154, 59%, 51%);
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+form p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+form span {
+  color: hsl(249, 10%, 26%);
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+form strong {
+  color: hsl(0, 100%, 74%);
+  cursor: pointer;
+  font-size: 0.8rem;
+  opacity: 1;
+}
+
+.free-trial {
+  background: hsl(248, 32%, 49%);
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+input {
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  color: hsl(249, 10%, 26%);
+  outline: none;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input:focus-within {
+  outline: 1px solid hsl(249, 10%, 26%);
+}
+
+.input-wrapper div {
+  position: relative;
+}
+
+.error-img {
+  position: absolute;
+  right: 5px;
+  top: 4px;
+  z-index: 100;
+  display: none;
+}
+
+/* input:invalid {
+  border: 1px solid red;
+} */
+
+@media screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+  }
+
+  .signup-details {
+    text-align: left;
+  }
+
+  .signup-details h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  body {
+    background-image: url("../images/bg-intro-desktop.png");
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+
+  h1 {
+    text-align: left;
+  }
+}
+
