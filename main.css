@@ -11,7 +11,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: hsl(0, 100%, 74%);
-  background-image: url("/images/bg-intro-mobile.png");
+  background-image: url("./images/bg-intro-mobile.png");
   color: white;
   line-height: 1.5;
   height: 100vh;
@@ -158,7 +158,7 @@ input:focus-within {
 
 @media screen and (min-width: 1040px) {
   body {
-    background-image: url("/images/bg-intro-desktop.png");
+    background-image: url("./images/bg-intro-desktop.png");
     display: grid;
     place-items: center;
     font-size: 1rem;
