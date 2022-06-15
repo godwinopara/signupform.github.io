@@ -21,23 +21,12 @@ formInputs.forEach((input) => {
 });
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  let success = false;
-
   formInputs.forEach((input) => {
     if (!input.validity.valid) {
+      e.preventDefault();
       showError();
-    } else {
-      success = true;
     }
   });
-
-  if (success === true) {
-    alert("Form submitted successfully");
-    formInputs.forEach((input) => {
-      input.value = "";
-    });
-  }
 });
 
 function showError() {
